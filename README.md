@@ -48,29 +48,10 @@ latte-lounge/
 
 ## Local Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/boralugoda02/latte-lounge.git
-   cd latte-lounge
-   ```
-2. No dependencies to install — this is a static site.
+git clone https://github.com/boralugoda02/latte-lounge.git
+cd latte-lounge
 
-## Local Development
-
-Because the site uses relative paths only, any static file server works. From the project root:
-
-```bash
-# Option A — Python (no install required on most systems)
-python3 -m http.server 8000
-
-# Option B — Node (if you have it installed)
-npx serve .
-
-# Option C — VS Code
-# Right-click index.html → "Open with Live Server"
-```
-
-Then open `http://localhost:8000` in your browser.
+No dependencies to install — this is a static site.
 
 ## Deploying to GitHub Pages
 
@@ -80,56 +61,15 @@ Then open `http://localhost:8000` in your browser.
 4. Choose the `main` branch and the `/ (root)` folder, then **Save**.
 5. GitHub will publish the site at `https://<your-github-username>.github.io/latte-lounge/` within a few minutes.
 
-## Git Commit Message Convention
-
-This project follows [Conventional Commits](https://www.conventionalcommits.org/). Structure every commit message as:
-
-```
-<type>(<optional scope>): <short summary>
-
-<optional body>
-<optional footer>
-```
-
-**Types used in this project:**
-
-| Type | When to use it |
-|---|---|
-| `feat` | A new page, section, or feature |
-| `fix` | A bug fix (broken link, layout issue, JS error) |
-| `style` | Formatting, whitespace, or visual tweaks with no logic change |
-| `refactor` | Restructuring code without changing behavior |
-| `docs` | Changes to README or other documentation |
-| `chore` | Maintenance tasks (asset optimization, `.gitignore`, etc.) |
-| `perf` | Performance improvements |
-
-**Examples:**
-
-```
-feat(contact): add contact form with native HTML5 validation
-fix(nav): correct active-link state on about page
-style(hero): adjust hero heading scale on tablet breakpoint
-docs(readme): add GitHub Pages deployment steps
-```
-
-## Accessibility & Code Quality
-
-- Semantic HTML5 landmarks throughout
-- `aria-label` on interactive controls (nav toggle, social icons)
-- Descriptive `alt` text on all images
-- Native HTML5 form validation (`required`, `type="email"`)
-- Visible keyboard focus states (`:focus-visible`)
-- Mobile-first, fluid layouts — no fixed pixel positioning
-
 ## Notes on Placeholder Content
 
-Several values in this mockup are intentionally placeholders and should be replaced before launch:
+Replace these before launch:
 
-- `DUMMY_PHONE` → real contact number (currently `+94 77 000 0000`)
-- `DUMMY_STREET` → exact street address for the map and `<address>` blocks
-- `DUMMY_PRICE` → confirmed menu pricing (currently `LKR 1,250` across all three featured items)
-- Google Maps iframe → replace the placeholder query with the exact pinned location
-- Social links (`#`) → real Facebook and TikTok profile URLs
+- **Phone number** → currently `+94 77 000 0000`
+- **Street address** → for the map and address blocks
+- **Menu pricing** → currently `LKR 1,250` across all three featured items
+- **Google Maps location** → replace with the exact pinned location
+- **Social links** → real Facebook and TikTok profile URLs
 
 ## License
 
