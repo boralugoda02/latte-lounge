@@ -6,8 +6,8 @@ The site is a hand-built, dependency-free static site — vanilla HTML, CSS and 
 
 ## Live Site
 
-> 🔗 **Live deployment:** `https://<your-github-username>.github.io/latte-lounge/`
-> _(Update this link once GitHub Pages is enabled for this repository.)_
+> 🔗 **Live deployment:** https://boralugoda02.github.io/Latte-Lounge/
+
 
 ## Pages
 
