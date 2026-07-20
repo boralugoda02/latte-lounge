@@ -6,7 +6,7 @@ media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 display_url: "Latte Lounge Content Manager"
-logo_url: "/dashboard/logo.jpeg"
+logo_url: "/dashboard/logo.png"
 
 collections:
   - name: "landing_page"
