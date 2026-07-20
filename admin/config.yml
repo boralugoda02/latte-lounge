@@ -1,10 +1,10 @@
 backend:
-  name: github
-  repo: boralugoda02/latte-lounge
-  branch: main
+  backend:
+  name: git-gateway
+  branch: main 
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
 site_url: https://boralugoda02.github.io/latte-lounge/
 display_url: https://boralugoda02.github.io/latte-lounge/
 logo_url: assets/images/logo-mark.png
@@ -25,6 +25,7 @@ collections:
               - {label: "Card Heading", name: "heading", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
               - {label: "Category Tag", name: "tag", widget: "select", options: ["CAKE", "COFFEE", "SNACK"]}
+
   - name: "menu"
     label: "Cafe Menu Items"
     folder: "assets/data/menu"
@@ -38,6 +39,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Item Category", name: "category", widget: "select", options: ["CAKE", "COFFEE", "SNACK"]}
       - {label: "Featured on Home Page", name: "featured", widget: "boolean", default: false}
+
   - name: "settings"
     label: "Site Settings"
     files:
