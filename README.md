@@ -44,52 +44,23 @@ tokens, and small vanilla JS modules that keep the interface honest.
 
 ## Project Structure
 
-├── about.html
-├── assets
-│   ├── css
-│   │   └── style.css
-│   ├── data
-│   │   ├── content.json
-│   │   └── offers.json
-│   ├── data_menu
-│   │   └── menu.json
-│   ├── images
-│   │   ├── about-illustration.svg
-│   │   ├── about-lifestyle.png
-│   │   ├── about-placeholder.jpg
-│   │   ├── cake-featured.png
-│   │   ├── coffee-featured.png
-│   │   ├── emblem-crop.png
-│   │   ├── favicon.png
-│   │   ├── hero-cozy.jpg
-│   │   ├── hero-illustration.svg
-│   │   ├── hero-placeholder.jpg
-│   │   ├── item-cake.svg
-│   │   ├── item-cutlets.jpg
-│   │   ├── item-cutlets.svg
-│   │   ├── item-latte.jpg
-│   │   ├── item-latte.svg
-│   │   ├── item-lovecake.jpg
-│   │   ├── logo-dark.jpeg
-│   │   ├── logo-light.jpeg
-│   │   ├── logo-mark.png
-│   │   ├── logo.png
-│   │   ├── snack-featured.png
-│   │   ├── story-writing.jpg
-│   │   └── texture-beans.png
-│   └── js
-│       ├── content.js
-│       ├── main.js
-│       └── theme-engine.js
-├── contact.html
-├── dashboard
-│   ├── admin-theme.css
-│   ├── config.yml
-│   └── index.html
-├── index.html
-├── LICENSE
-└── README.md
-
+latte-lounge/
+├── assets/
+│   ├── css/
+│   │   └── style.css            # Main website styles (Stylesheets)
+│   ├── data/
+│   │   ├── content.json         # General settings (Hours, Phone, Social links)
+│   │   └── offers.json          # Offers and Announcements data
+│   ├── data_menu/
+│   │   └── menu.json            # Cafe menu items and pricing data
+│   └── images/                  # Directory where dashboard-uploaded images are saved
+├── dashboard/
+│   ├── admin-theme.css          # Custom styles and Dark Mode overrides for the dashboard
+│   ├── config.yml               # Decap CMS configurations (Collections, Fields, and Backend)
+│   ├── index.html               # Main entry point to load the Admin Dashboard UI
+│   └── logo.png                 # Cafe logo displayed at the top of the dashboard
+├── index.html                   # Customer-facing main homepage
+└── README.md                    # Brief documentation/overview of the project
 > **Logo:** the real brand mark is in `assets/images/logo.png` (full
 > lockup, used in the footer) and `assets/images/logo-mark.png` (cropped
 > emblem, used in the nav and as the favicon source). Replace either file
