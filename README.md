@@ -47,21 +47,20 @@ tokens, and small vanilla JS modules that keep the interface honest.
 latte-lounge/
 ├── assets/
 │   ├── css/
-│   │   └── style.css            # Main website styles (Stylesheets)
+│   │   └── style.css            
 │   ├── data/
-│   │   ├── content.json         # General settings (Hours, Phone, Social links)
-│   │   └── offers.json          # Offers and Announcements data
+│   │   ├── content.json         
+│   │   └── offers.json          
 │   ├── data_menu/
-│   │   └── menu.json            # Cafe menu items and pricing data
-│   └── images/                  # Directory where dashboard-uploaded images are saved
+│   │   └── menu.json            
+│   └── images/                  
 ├── dashboard/
-│   ├── admin-theme.css          # Custom styles and Dark Mode overrides for the dashboard
-│   ├── config.yml               # Decap CMS configurations (Collections, Fields, and Backend)
-│   ├── index.html               # Main entry point to load the Admin Dashboard UI
-│   └── logo.png                 # Cafe logo displayed at the top of the dashboard
-├── index.html                   # Customer-facing main homepage
-└── README.md                    # Brief documentation/overview of the project
-
+│   ├── admin-theme.css          
+│   ├── config.yml               
+│   ├── index.html              
+│   └── logo.png                 
+├── index.html                   
+└── README.md                   
 
 ## Content Management (Git-based CMS)
 
