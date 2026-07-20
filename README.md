@@ -38,7 +38,8 @@ tokens, and small vanilla JS modules that keep the interface honest.
 
 ## Live Site
 
-(https://boralugoda02.github.io/Latte-Lounge/)
+* **Live Website:** (https://cool-dodol-d1bbc7.netlify.app)
+* **Admin Dashboard (CMS):** (https://cool-dodol-d1bbc7.netlify.app/admin/)
 
 
 ## Project Structure
