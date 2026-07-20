@@ -61,10 +61,7 @@ latte-lounge/
 │   └── logo.png                 # Cafe logo displayed at the top of the dashboard
 ├── index.html                   # Customer-facing main homepage
 └── README.md                    # Brief documentation/overview of the project
-> **Logo:** the real brand mark is in `assets/images/logo.png` (full
-> lockup, used in the footer) and `assets/images/logo-mark.png` (cropped
-> emblem, used in the nav and as the favicon source). Replace either file
-> to update the logo everywhere it appears — no markup changes needed.
+
 
 ## Content Management (Git-based CMS)
 
