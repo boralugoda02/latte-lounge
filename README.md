@@ -38,9 +38,8 @@ tokens, and small vanilla JS modules that keep the interface honest.
 
 ## Live Site
 
-[https://\<your-github-username\>.github.io/\<your-repo-name\>/](https://your-github-username.github.io/your-repo-name/)
+(https://boralugoda02.github.io/Latte-Lounge/)
 
-_(Replace with the real GitHub Pages URL once the repository is deployed.)_
 
 ## Project Structure
 
@@ -90,7 +89,7 @@ Our dynamic client engine (`assets/js/content.js`) fetches these updated JSON fi
 **Editable content paths managed by Decap CMS:**
 
 | Collection | Target Path | Formats & Widgets |
-|---|---|---|
+
 | **Landing Page Content** | `assets/data/offers.json` | Section Title (string), Offers Cards (list of cards: heading, description, tag: COFFEE/CAKE/SNACK) |
 | **Cafe Menu Items** | `assets/data/menu/*.json` | Individual JSON documents containing Item Name, Price (LKR, integer), Description, Item Category (COFFEE/CAKE/SNACK), and Featured on Home Page (boolean) |
 | **Site Settings** | `assets/data/content.json` | Site settings (Hours, Phone display/digits, Address lines, Google Maps iframe embed URL, and Social links) |
