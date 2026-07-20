@@ -12,25 +12,29 @@ collections:
   - name: "landing_page"
     label: "🏠 Landing Page"
     label_singular: "Landing Page Content"
-    file: "_content/landing.json"
-    fields:
-      - { label: "Main Title", name: "title", widget: "string" }
-      - { label: "Main Image", name: "image", widget: "image" }
-      - { label: "Main Description", name: "description", widget: "markdown" }
-      - label: "Offers"
-        name: "offers"
-        widget: "list"
+    delete: false
+    files:
+      - name: "landing"
+        label: "Landing Page Content"
+        file: "_content/landing.json"
         fields:
-          - { label: "Title", name: "offer_title", widget: "string" }
-          - { label: "Description", name: "offer_desc", widget: "string" }
-          - { label: "Icon", name: "offer_icon", widget: "string", description: "e.g. coffee, gift" }
-      - label: "Announcements"
-        name: "announcements"
-        widget: "list"
-        fields:
-          - { label: "Message", name: "message", widget: "string" }
-          - { label: "Link (Optional)", name: "link", widget: "string" }
-          - { label: "Date (Optional)", name: "date", widget: "date", required: false }
+          - { label: "Main Title", name: "title", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Main Description", name: "description", widget: "markdown" }
+          - label: "Offers"
+            name: "offers"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "offer_title", widget: "string" }
+              - { label: "Description", name: "offer_desc", widget: "string" }
+              - { label: "Icon", name: "offer_icon", widget: "string", description: "e.g. coffee, gift" }
+          - label: "Announcements"
+            name: "announcements"
+            widget: "list"
+            fields:
+              - { label: "Message", name: "message", widget: "string" }
+              - { label: "Link (Optional)", name: "link", widget: "string" }
+              - { label: "Date (Optional)", name: "date", widget: "date", required: false }
 
   - name: "menu"
     label: "📋 Cafe Menu"
@@ -48,13 +52,17 @@ collections:
   - name: "settings"
     label: "⚙️ Site Settings"
     label_singular: "Global Settings"
-    file: "_content/settings.json"
-    fields:
-      - { label: "Site Name", name: "site_title", widget: "string", default: "Latte Lounge" }
-      - { label: "Header Style", name: "header_style", widget: "select", options: ["Light", "Dark", "Custom"] }
-      - { label: "Contact Email", name: "contact_email", widget: "string" }
-      - { label: "Social Links", name: "social_links", widget: "object", fields: [
-          { label: "Facebook", name: "facebook", widget: "string" },
-          { label: "Instagram", name: "instagram", widget: "string" }
-        ]
-      }
+    delete: false
+    files:
+      - name: "general"
+        label: "Global Settings"
+        file: "_content/settings.json"
+        fields:
+          - { label: "Site Name", name: "site_title", widget: "string", default: "Latte Lounge" }
+          - { label: "Header Style", name: "header_style", widget: "select", options: ["Light", "Dark", "Custom"] }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Social Links", name: "social_links", widget: "object", fields: [
+              { label: "Facebook", name: "facebook", widget: "string" },
+              { label: "Instagram", name: "instagram", widget: "string" }
+            ]
+          }
