@@ -26,17 +26,20 @@ collections:
               - { label: "Category Tag", name: "tag", widget: select, options: ["CAKE", "COFFEE", "SNACK"] }
   - name: menu
     label: Cafe Menu Items
-    file: assets/data_menu/menu.json
-    fields:
-      - label: Menu List
-        name: items
-        widget: list
+    files:
+      - file: assets/data_menu/menu.json
+        label: Menu List Content
+        name: items_list
         fields:
-          - { label: "Item Name", name: "title", widget: string }
-          - { label: "Price (LKR)", name: "price", widget: number, value_type: int }
-          - { label: "Description", name: "description", widget: text }
-          - { label: "Item Category", name: "category", widget: select, options: ["CAKE", "COFFEE", "SNACK"] }
-          - { label: "Featured Status", name: "featured", widget: boolean, default: false }
+          - label: Menu List
+            name: items
+            widget: list
+            fields:
+              - { label: "Item Name", name: "title", widget: string }
+              - { label: "Price (LKR)", name: "price", widget: number, value_type: int }
+              - { label: "Description", name: "description", widget: text }
+              - { label: "Item Category", name: "category", widget: select, options: ["CAKE", "COFFEE", "SNACK"] }
+              - { label: "Featured Status", name: "featured", widget: boolean, default: false }
   - name: settings
     label: Site Settings
     files:
